@@ -3,6 +3,7 @@ package com.eshchepetov.learnenglish.learnenglish.tasks.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * Created by eugeneshchepetov on 8/8/17.
@@ -10,6 +11,7 @@ import javax.persistence.GeneratedValue;
 @Entity
 public class Task {
 
+    @Id
     @Column
     @GeneratedValue
     private Long id;
@@ -20,9 +22,13 @@ public class Task {
     @Column
     private String description;
 
-    public Long getId() { return id; }
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(Long id) { this.id = id; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
