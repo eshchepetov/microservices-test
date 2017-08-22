@@ -11,6 +11,4 @@ import java.util.List;
  */
 @Repository
 public interface ITaskRepository extends CrudRepository<Task, Long> {
-//    List<Task> getAllTasks();
-//    Task createTask(Task task);
 }

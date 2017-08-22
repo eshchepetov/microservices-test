@@ -1,0 +1,14 @@
+learn-english:
+  image: springio/learn-english
+  links:
+    - db
+  ports:
+    - 8080:8080
+
+db:
+  image: postgres
+  ports:
+    - 5432:5432
+  environment:
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_USER: postgres
